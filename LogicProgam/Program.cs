@@ -13,6 +13,10 @@ namespace LogicProgam
             else
                 Console.WriteLine("\n Given Number is not a Perfect Number");
 
+            //UC3
+            PrimeEven primeEven = new PrimeEven();
+            primeEven.checkPrime(12222);
+
 
         }
     }
