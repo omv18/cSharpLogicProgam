@@ -35,9 +35,25 @@ namespace LogicProgam
                         CouponNumber.checkCoupon(9);
                         //couponNumber.checkCoupon(9);
                         break;
-                    default:
-                        break;
+                    case 6:
+                        CelFar cf = new CelFar();
+                        Console.WriteLine("1. celcius to farhnite \n 2. farnhite to celcius ");
+                        int celFar = Convert.ToInt32(Console.ReadLine());
+                        if (celFar == 0)
+                        {
+                            float f = cf.celcuisConvert(99);
+                            Console.WriteLine("celcius to farnhite is " + f);
+                        }
+                        else
+                        {
+                            float c = cf.fahrenhiteConvert(99);
+                            Console.WriteLine("Franhite to celcius is : " + c);
+                        }
+                            break;
+                        default:
+                            break;
                 }
+
             //}
         }
     }
