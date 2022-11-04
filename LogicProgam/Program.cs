@@ -59,6 +59,12 @@ namespace LogicProgam
                         VendingMachine vm = new VendingMachine();
                         vm.inputMoney(190);
                         break;
+                    case 9:
+                        Stopwatch sc = new Stopwatch();
+                        sc.start();
+                        break;
+                    case 10:
+                        break;
                     default:
                             break;
                 }
