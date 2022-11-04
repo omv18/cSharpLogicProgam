@@ -6,11 +6,12 @@ namespace LogicProgam
         static void Main(string[] args)
         {
             bool flag = true;
-            Console.WriteLine("1.Fabonacci Series \n 2.Perfect Number \n 3.Prime Even \n 4.Reverse Number " +
-                "\n 5.Coupon Number \n 6.CelFar 7. monthly Pay 8.Exit");
-            int check = Convert.ToInt32(Console.ReadLine());
+
             while (flag)
             {
+                Console.WriteLine("1.Fabonacci Series \n 2.Perfect Number \n 3.Prime Even \n 4.Reverse Number " +
+                    "\n 5.Coupon Number \n 6.CelFar \n 7. monthly Pay \n  8.vending machine  \n 9.exit");
+                int check = Convert.ToInt32(Console.ReadLine());
                 switch (check)
                 {
                     case 1:
@@ -51,9 +52,13 @@ namespace LogicProgam
                             Console.WriteLine("Franhite to celcius is : " + c);
                         }
                          break;
-                case 7:
-                    MonthlyPay.momthlyPayment();
-                    break;
+                    case 7:
+                        MonthlyPay.momthlyPayment();
+                        break;
+                    case 8:
+                        VendingMachine vm = new VendingMachine();
+                        vm.inputMoney(190);
+                        break;
                     default:
                             break;
                 }
