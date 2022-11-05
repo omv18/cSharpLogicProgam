@@ -9,8 +9,8 @@ namespace LogicProgam
 
             while (flag)
             {
-                Console.WriteLine("1.Fabonacci Series \n 2.Perfect Number \n 3.Prime Even \n 4.Reverse Number " +
-                    "\n 5.Coupon Number \n 6.CelFar \n 7. monthly Pay \n  8.vending machine  \n 9.exit");
+                Console.WriteLine(" 1.Fabonacci Series  2.Perfect Number \n 3.Prime Even  4.Reverse Number " +
+                    " 5.Coupon Number \n 6.CelFar  7. monthly Pay \n  8.vending machine   9.StopWatch \n10. sqrtNewton  \n 11.exit");
                 int check = Convert.ToInt32(Console.ReadLine());
                 switch (check)
                 {
@@ -57,13 +57,14 @@ namespace LogicProgam
                         break;
                     case 8:
                         VendingMachine vm = new VendingMachine();
-                        vm.inputMoney(190);
+                        vm.inputMoney(2250);
                         break;
                     case 9:
                         Stopwatch sc = new Stopwatch();
                         sc.start();
                         break;
                     case 10:
+                        Console.WriteLine("Case 10: "+SqrtNewton.calSqrt(16));
                         break;
                     default:
                             break;

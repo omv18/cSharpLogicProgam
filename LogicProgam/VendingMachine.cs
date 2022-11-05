@@ -9,18 +9,20 @@ namespace LogicProgam
 {
     internal class VendingMachine
     {
-        int[] money = {1,2,5,10,50,100,500,1000};
+        int[] money = {1,2,5,10,50,100,500,1000,10000};
         int[] ch = { 0, 0, 0, 0, 0, 0, 0, 0 };
         int totalChange = 0;  
         public void inputMoney(int num)
         {
             vendingMachime(num);
             Console.WriteLine("Minnimum note for change is : "+totalChange);
-            foreach(int i in ch)
+            for(int i = 0; i < ch.Length; i++)
             {
-                Console.Write(i + "   ");
+                if(ch[i] != 0)
+                {
+                    Console.WriteLine(money[i] + " RS number is : " + ch[i]);
+                }
             }
-            Console.WriteLine();
         }
         public int findIndex(int num)
         {
@@ -36,7 +38,7 @@ namespace LogicProgam
         {
             int index = findIndex(num);
             int chIndex = index;
-            Console.WriteLine("index is :" + index + "   "+money[index]);
+            //Console.WriteLine("index is :" + index + "   "+money[index]);
             if (num == 0) return;
             if(num == 1)
             {
@@ -52,11 +54,6 @@ namespace LogicProgam
             if (num % money[index] == 0)
             {
                 int add = num / money[index];
-/*                if (index < 1)
-                {
-                    index++;
-                    ch[index] += index;
-                }*/
                 totalChange += add;
                 ch[index] += add;
                 return;
