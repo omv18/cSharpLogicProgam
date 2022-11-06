@@ -10,7 +10,7 @@ namespace LogicProgam
             while (flag)
             {
                 Console.WriteLine(" 1.Fabonacci Series  2.Perfect Number \n 3.Prime Even  4.Reverse Number " +
-                    " 5.Coupon Number \n 6.CelFar  7. monthly Pay \n  8.vending machine   9.StopWatch \n10. sqrtNewton  \n 11.exit");
+                    " 5.Coupon Number \n 6.CelFar  7. monthly Pay \n  8.vending machine   9.StopWatch \n10. sqrtNewton  \n 11.To-Binary 12.exit");
                 int check = Convert.ToInt32(Console.ReadLine());
                 switch (check)
                 {
@@ -35,7 +35,6 @@ namespace LogicProgam
                         break;
                     case 5:
                         CouponNumber.checkCoupon(9);
-                        //couponNumber.checkCoupon(9);
                         break;
                     case 6:
                         CelFar cf = new CelFar();
@@ -66,11 +65,13 @@ namespace LogicProgam
                     case 10:
                         Console.WriteLine("Square root of a given number is :  "+SqrtNewton.calSqrt(16));
                         break;
+                    case 11:
+                        BinartyTo.toBinary(106);
+                        break;
                     default:
                             break;
                 }
             }
         }
     }
-
 }
