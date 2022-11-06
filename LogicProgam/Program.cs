@@ -68,6 +68,9 @@ namespace LogicProgam
                     case 11:
                         BinartyTo.toBinary(106);
                         break;
+                    case 12:
+                        DayOfWeeks.dayOfWeeks();
+                        break;
                     default:
                             break;
                 }
