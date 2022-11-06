@@ -64,7 +64,7 @@ namespace LogicProgam
                         sc.start();
                         break;
                     case 10:
-                        Console.WriteLine("Case 10: "+SqrtNewton.calSqrt(16));
+                        Console.WriteLine("Square root of a given number is :  "+SqrtNewton.calSqrt(16));
                         break;
                     default:
                             break;
@@ -74,4 +74,3 @@ namespace LogicProgam
     }
 
 }
-

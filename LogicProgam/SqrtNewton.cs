@@ -21,7 +21,6 @@ namespace LogicProgam
                     break;
                 t = squrt;
             }
-
             return t;
         }
     }
